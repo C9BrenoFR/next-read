@@ -17,4 +17,14 @@
         0 0 15px #0cdbf2, 
         0 0 30px #0cdbf2;
     }
+
+    .neon-effect-2 {
+      @apply text-[#9feded] border-[#9feded] rounded-b-2xl;
+      box-shadow: 
+        0 0 2px #9feded, 
+        inset 0 0 2px #9feded, 
+        0 0 5px #9feded, 
+        0 0 15px #9feded, 
+        0 0 30px #9feded;
+    }
   }
