@@ -15,7 +15,7 @@ export default function Header() {
         >
           Next Read
         </Link>
-        <NavLink href="/" originalText={<span className="material-symbols-outlined">account_circle</span>} hoverContent={<p>Login</p>} />
+        <NavLink href="/login" originalText={<span className="material-symbols-outlined">account_circle</span>} hoverContent={<p>Login</p>} />
         <NavLink href="/" originalText={<span className="material-symbols-outlined">settings</span>} hoverContent={<p>Gerenciamento</p>} />
       </div>
     </header>
