@@ -1,12 +1,12 @@
 
 interface TitleCardProps {
-    title : string,
+    children : string,
 }
 
-export default function TitleCard({title}: TitleCardProps) {
+export default function TitleCard({children}: TitleCardProps) {
     return (
         <article className="h-14 w-full flex flex-row mb-6">
-            <div className={`h-full w-[25%] px-11 flex justify-end font-courier text-xl text-customBlack items-center bg-[#0cdbf2]`}>{title}</div>
+            <div className={`h-full w-[25%] px-11 flex justify-end font-courier text-xl text-customBlack items-center bg-[#0cdbf2]`}>{children}</div>
             <div className={` 
             border-t-[28px] border-t-[#0cdbf2]
             border-l-[28px] border-l-[#0cdbf2] 
