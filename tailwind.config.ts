@@ -34,12 +34,17 @@ const config: Config = {
           variant1 : '#009494',
         },
       },
+      boxShadow: { 
+        'image-shadow': '5px 5px 20px #2e2e2e',
+      },
       fontFamily: {
         cinzel: ['Cinzel', 'sans-serif'],
         courier : ['Courier Prime', 'monospace'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+   
+  ],
 };
 export default config;
