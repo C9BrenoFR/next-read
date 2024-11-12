@@ -1,7 +1,7 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination} from 'swiper/modules';
+import { Autoplay, Navigation, Pagination} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -31,9 +31,11 @@ const slides = [
     return (
       <section className="w-full h-auto">
         <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             slidesPerView={1}
             navigation
+            loop={true}
+            autoplay={{ delay: 5000 }}
             pagination={{ clickable: true }}
         >
             {slides.map((slide) => (
