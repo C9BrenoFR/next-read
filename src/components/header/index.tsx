@@ -5,8 +5,7 @@ import NavLink from "../nav_link";
 
 export default function Header() {
   return (
-    <header className="bg-customWhite flex justify-center h-14">
-      <div className="w-1/3 flex items-center justify-between h-full">
+    <header className="bg-customWhite flex justify-center h-14"><div className="w-1/3 flex items-center justify-between h-full">
         <NavLink href="/" originalText={<span className="material-symbols-outlined">store</span>} hoverContent={<p>Loja</p>} />
         <NavLink href="/" originalText={<span className="material-symbols-outlined">call</span>} hoverContent={<p>Contato</p>} />
         <Link

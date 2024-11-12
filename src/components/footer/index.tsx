@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="w-1/3 h-full flex justify-center items-center">
           <Image
             className="rounded-full mt-[-40px]"
-            src="/img/logo.png"
+            src="/img/logoSymbol.png"
             alt="logo"
             width={100}
             height={100}
