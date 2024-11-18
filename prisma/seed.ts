@@ -52,7 +52,87 @@ async function main() {
         description: "One of Us Is Lying é um romance de mistério e thriller jovem adulto escrito por Karen M. McManus. O livro foi publicado em 30 de maio de 2017 pela Delacorte Press, uma divisão da Random House. O romance é a estreia de McManus e foi inspirado no filme de 1985 The Breakfast Club.",
         rating: 5,
     },
-  ];
+    {
+      name: "A cinco passos de você",
+      price: 100,
+      image: "https://m.media-amazon.com/images/I/81Q11TuUR3L._SL1500_.jpg",
+      category: "Category",
+      description: "One of Us Is Lying é um romance de mistério e thriller jovem adulto escrito por Karen M. McManus. O livro foi publicado em 30 de maio de 2017 pela Delacorte Press, uma divisão da Random House. O romance é a estreia de McManus e foi inspirado no filme de 1985 The Breakfast Club.",
+      rating: 5,
+    },
+    {
+      name: "A revolução dos bichos",
+      price: 100,
+      image: "https://m.media-amazon.com/images/I/515LCJZ+kPL._SY445_SX342_.jpg",
+      category: "Category",
+      description: "One of Us Is Lying é um romance de mistério e thriller jovem adulto escrito por Karen M. McManus. O livro foi publicado em 30 de maio de 2017 pela Delacorte Press, uma divisão da Random House. O romance é a estreia de McManus e foi inspirado no filme de 1985 The Breakfast Club.",
+      rating: 5,
+    },
+    {
+      name: "A Paciente Silenciosa",
+      price: 120,
+      image: "https://m.media-amazon.com/images/I/413th2NQc8L._SY445_SX342_.jpg",
+      category: "Suspense",
+      description: "A Paciente Silenciosa é um romance de mistério psicológico de Alex Michaelides que conta a história de uma mulher acusada de matar o marido e o terapeuta que tenta desvendar o mistério.",
+      rating: 4.5
+    },
+    {
+      name: "Daisy Jones & The Six",
+      price: 90,
+      image: "https://m.media-amazon.com/images/I/516FyELi9IL._SY445_SX342_.jpg",
+      category: "Ficção",
+      description: "Daisy Jones & The Six é um romance de Taylor Jenkins Reid sobre a ascensão e queda de uma banda de rock fictícia nos anos 70.",
+      rating: 4.7
+    },
+    {
+      name: "É Assim Que Acaba",
+      price: 100,
+      image: "https://m.media-amazon.com/images/I/91r5G8RxqfL._SY466_.jpg",
+      category: "Romance",
+      description: "É Assim Que Acaba é um romance de Colleen Hoover que explora temas de amor, sacrifício e superação de traumas pessoais.",
+      rating: 4.8
+    },
+    {
+      name: "O Homem de Giz",
+      price: 80,
+      image: "https://m.media-amazon.com/images/I/41ar20EMYLL._SY445_SX342_.jpg",
+      category: "Mistério",
+      description: "O Homem de Giz, de C.J. Tudor, é um thriller que alterna entre o passado e o presente, envolvendo segredos sombrios e crimes não resolvidos.",
+      rating: 4.3
+    },
+    {
+      name: "Pequenos Incêndios por Toda Parte",
+      price: 95,
+      image: "https://m.media-amazon.com/images/I/51gFlsFWZOL._SY445_SX342_.jpg",
+      category: "Drama",
+      description: "Pequenos Incêndios por Toda Parte, de Celeste Ng, é uma história sobre família, maternidade e as tensões raciais em uma comunidade suburbana.",
+      rating: 4.6
+    },
+    {
+      name: "A Garota no Trem",
+      price: 85,
+      image: "https://m.media-amazon.com/images/I/51s6lglXdSL._SY445_SX342_.jpg",
+      category: "Suspense",
+      description: "A Garota no Trem, de Paula Hawkins, é um thriller psicológico que acompanha uma mulher cuja curiosidade a leva a se envolver em um crime perturbador.",
+      rating: 4.4
+    },
+    {
+      name: "A Sombra do Vento",
+      price: 110,
+      image: "https://m.media-amazon.com/images/I/51JpWJwwJ9L._SY445_SX342_.jpg",
+      category: "Ficção",
+      description: "A Sombra do Vento, de Carlos Ruiz Zafón, é um romance cheio de mistério e emoção ambientado em Barcelona, centrado em um livro que muda a vida de seu protagonista.",
+      rating: 4.9
+    },
+    {
+      name: "1984",
+      price: 70,
+      image: "https://m.media-amazon.com/images/I/71lISOF1SNL.jpg",
+      category: "Distopia",
+      description: "1984, de George Orwell, é um clássico que explora temas de opressão, vigilância e controle em um regime totalitário.",
+      rating: 4.8
+    }
+];
 
   for (const book of booksData) {
     await prisma.book.create({
