@@ -18,6 +18,10 @@ export default function SingUpCard(){
             />
         </Link>
         <form action="#" className="flex flex-col gap-y-3 p-3 items-start">
+            <div className="flex justify-center items-center flex-col w-full">
+                <p className="text-white">Relizar Cadastro</p>
+            </div>
+
             <div className="flex flex-col">
                 <input name="name" type="name" placeholder="Nome" className="rounded-full bg-transparent ps-3 py-1 border border-white placeholder:text-white focus:outline-none" />
             </div>
@@ -32,7 +36,7 @@ export default function SingUpCard(){
             </div>
             
             <div className="w-full flex flex-col items-center">
-                <button className="rounded-full border border-white hover:bg-white py-1 px-14 hover:text-black transition-all ease-in-out bg-transparent text-white">Login</button>
+                <button className="rounded-full border border-white hover:bg-white py-1 px-14 hover:text-black transition-all ease-in-out bg-transparent text-white">Cadastrar</button>
                 <button type="button" onClick={() => swiper.slideNext()} className="text-xs text-black underline pt-1">Ja tem conta?</button>
             </div>
         </form>

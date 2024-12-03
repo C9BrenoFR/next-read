@@ -16,6 +16,10 @@ export default function LoginCard(){
                 ></Image>
             </Link>
             <form action="#" className="flex flex-col gap-y-3 p-3 items-center">
+                <div className="flex justify-center items-center flex-col w-full">
+                    <p className="text-white">Bem vindo de volta!</p>
+                </div>
+
                 <div className="flex flex-col">
                     <input name="email" type="email" placeholder="Email" className="rounded-full bg-transparent ps-3 py-1 border border-white placeholder:text-white focus:outline-none" />
                 </div>
