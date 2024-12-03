@@ -30,3 +30,7 @@
         0 0 30px #9feded;
     }
   }
+
+.line-height-default{
+  line-height: inherit !important;
+}
