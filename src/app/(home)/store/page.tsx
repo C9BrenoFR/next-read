@@ -2,6 +2,7 @@ import { getProducts } from "@/backend/products/actions";
 import ProductCard from "@/components/public/cards/product_card";
 import TitleCard from "@/components/public/cards/title_card";
 import Pagination from "@/components/pagination";
+import SearchBar from "@/components/public/search_bar";
 
 type StoreProps = {
     searchParams: {
@@ -17,6 +18,8 @@ export default async function Store({searchParams} : StoreProps){
     return(
         <section className="w-full h-auto gap-y-24 flex flex-row flex-wrap justify-around bg-[#011126] py-24">
             <TitleCard>Nossos Livros</TitleCard>
+
+            <SearchBar base_url="/store">Pesquise um titulo...</SearchBar>
 
             {products.map((product, index) => (
                 <ProductCard
