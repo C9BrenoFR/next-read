@@ -1,5 +1,5 @@
 import { isEven } from "@/app/js/isEven";
-import Book from "@/components/book";
+import Book from "@/components/public/book";
 import { Decimal } from "@prisma/client/runtime/library";
 import Image from "next/image";
 

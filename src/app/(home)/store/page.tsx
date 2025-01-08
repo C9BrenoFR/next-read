@@ -1,6 +1,6 @@
 import { getProducts } from "@/backend/products/actions";
-import ProductCard from "@/components/cards/product_card";
-import TitleCard from "@/components/cards/title_card";
+import ProductCard from "@/components/public/cards/product_card";
+import TitleCard from "@/components/public/cards/title_card";
 import Pagination from "@/components/pagination";
 
 type StoreProps = {

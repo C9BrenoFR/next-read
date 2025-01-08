@@ -1,6 +1,6 @@
 'use client';
 
-import BookButton from "@/components/custom_buttons/book_button";
+import BookButton from "@/components/public/custom_buttons/book_button";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter"
 

@@ -1,11 +1,11 @@
 'use client';
 import Link from "next/link";
-import { useState } from "react";
-import NavLink from "../nav_link";
+import NavLink from "../custom_buttons/nav_link";
 
 export default function Header() {
   return (
-    <header className="bg-customWhite flex justify-center h-14"><div className="w-1/3 flex items-center justify-between h-full">
+    <header className="bg-customWhite flex justify-center h-14">
+      <div className="w-1/3 flex items-center justify-between h-full">
         <NavLink href="/store" originalText={<span className="material-symbols-outlined">store</span>} hoverContent={<p>Loja</p>} />
         <NavLink href="/call" originalText={<span className="material-symbols-outlined">call</span>} hoverContent={<p>Contato</p>} />
         <Link

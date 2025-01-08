@@ -1,7 +1,7 @@
 'use client';
 
-import LoginCard from "@/components/cards/login_card";
-import SingUpCard from "@/components/cards/sing_up_card";
+import LoginCard from "@/components/public/cards/login_card";
+import SingUpCard from "@/components/public/cards/sing_up_card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFlip, Navigation } from "swiper/modules";
 

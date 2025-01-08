@@ -1,6 +1,6 @@
 import { lastSixBooks } from "@/backend/landing_page/actions";
-import ProductCard from "@/components/cards/product_card";
-import TitleCard from "@/components/cards/title_card";
+import ProductCard from "@/components/public/cards/product_card";
+import TitleCard from "@/components/public/cards/title_card";
 
 const product = await lastSixBooks();
 
