@@ -7,6 +7,7 @@ import SearchBar from "@/components/public/search_bar";
 type StoreProps = {
     searchParams: {
         page?: string,
+        search?: string,
     }
 }
 
@@ -14,12 +15,13 @@ type StoreProps = {
 
 export default async function Store({searchParams} : StoreProps){
     const current_page = Number(searchParams?.page) || 1;
-    const {products, total_pages} = await getProducts(current_page);
+    const search = searchParams?.search;
+    const {products, total_pages} = await getProducts(current_page, search);
     return(
         <section className="w-full h-auto gap-y-24 flex flex-row flex-wrap justify-around bg-[#011126] py-24">
             <TitleCard>Nossos Livros</TitleCard>
 
-            <SearchBar base_url="/store">Pesquise um titulo...</SearchBar>
+            <SearchBar value={search && search} base_url="/store">Pesquise um titulo...</SearchBar>
 
             {products.map((product, index) => (
                 <ProductCard
@@ -36,6 +38,7 @@ export default async function Store({searchParams} : StoreProps){
             base_url="/store" 
             curent_page={current_page} 
             total_pages={total_pages}
+            search={search}
             />
         </section>
     );

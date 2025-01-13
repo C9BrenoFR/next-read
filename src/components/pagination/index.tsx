@@ -4,9 +4,10 @@ interface PaginationProps{
     curent_page: number,
     total_pages: number,
     base_url: string,
+    search?: string
 }
 
-export default function Pagination({curent_page, total_pages, base_url}: PaginationProps){
+export default function Pagination({curent_page, total_pages, base_url,search}: PaginationProps){
     let previus_page = curent_page;
     let next_page = curent_page;
     
@@ -33,7 +34,7 @@ export default function Pagination({curent_page, total_pages, base_url}: Paginat
             {pages.map((page, index) => (
                 <Link
                 key={index}
-                href={base_url + `?page=${page}`}
+                href={base_url + `?page=${page}` + (search ? `&search=${search}` : "")}
                 className={`text-customWhite-variant2 p-4 ${page == curent_page && "border-x"}`}
                 >
                 {page}
