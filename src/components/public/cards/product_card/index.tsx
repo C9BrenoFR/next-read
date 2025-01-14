@@ -1,16 +1,7 @@
 import { isEven } from "@/app/js/isEven";
 import Book from "@/components/public/book";
-import { Decimal } from "@prisma/client/runtime/library";
 import Image from "next/image";
-
-interface Product{
-    name : string,
-    price : Decimal,
-    image : string,
-    category : string,
-    description : string,
-    rating : Decimal,
-}
+import { Product } from "@/interfaces/product";
 
 interface ProductCardProps {
     width : string,
@@ -30,8 +21,8 @@ export default function ProductCard({width, product, heigth, cardId, hover}: Pro
                 <div className="absolute w-3/4 h-3/4 left-1 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                     {hover ? (
                         <Image
-                        alt={product.name}
                         src={product.image}
+                        alt={product.name}
                         width={3000}
                         height={4500}
                         />                        
