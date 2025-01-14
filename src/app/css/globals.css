@@ -34,3 +34,7 @@
 .line-height-default{
   line-height: inherit !important;
 }
+
+.fullScreenHeight{
+  height: calc(100vh - 13.5rem);
+}
