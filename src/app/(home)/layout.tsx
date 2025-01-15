@@ -10,7 +10,9 @@ export default function PageLayout({
       <html lang="en">
         <body>
           <Header />
-          {children}
+          <main className="fullScreenHeight bg-[#011126]">
+            {children}
+          </main>
           <Footer />
         </body>
       </html>

@@ -36,5 +36,5 @@
 }
 
 .fullScreenHeight{
-  height: calc(100vh - 13.5rem);
+  min-height: calc(100vh - 13.5rem);
 }
