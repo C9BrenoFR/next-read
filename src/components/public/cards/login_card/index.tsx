@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSwiper } from "swiper/react";
+import TransparentInput from "../../inputs/transparent_input";
 
 export default function LoginCard(){
     const swiper = useSwiper();
@@ -15,19 +16,13 @@ export default function LoginCard(){
                 height={100}
                 ></Image>
             </Link>
-            <form action="#" className="flex flex-col gap-y-3 p-3 items-center">
+            <form action="#" className="flex flex-col gap-y-3 p-3 items-center text-white">
                 <div className="flex justify-center items-center flex-col w-full">
-                    <p className="text-white">Bem vindo de volta!</p>
+                    <p>Bem vindo de volta!</p>
                 </div>
 
-                <div className="flex flex-col">
-                    <input name="email" type="email" placeholder="Email" className="rounded-full bg-transparent ps-3 py-1 border border-white placeholder:text-white focus:outline-none" />
-                </div>
-                
-
-                <div className="flex flex-col">
-                    <input name="password" type="password" placeholder="Senha" className="rounded-full bg-transparent ps-3 py-1 border border-white placeholder:text-white focus:outline-none" />
-                </div>
+                <TransparentInput name="email" type="email" placeholder="E-mail"/>
+                <TransparentInput name="password" type="password" placeholder="Senha"/>
                 
                 <div className="w-full flex flex-col items-center">
                     <button className="rounded-full border border-white hover:bg-white py-1 px-14 hover:text-black transition-all ease-in-out bg-transparent text-white">Login</button>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSwiper } from "swiper/react";
+import TransparentInput from "../../inputs/transparent_input";
 
 export default function SingUpCard(){
 
@@ -17,23 +18,14 @@ export default function SingUpCard(){
             height={100}
             />
         </Link>
-        <form action="#" className="flex flex-col gap-y-3 p-3 items-start">
+        <form action="#" className="flex flex-col gap-y-3 p-3 items-start text-white">
             <div className="flex justify-center items-center flex-col w-full">
-                <p className="text-white">Relizar Cadastro</p>
+                <p>Relizar Cadastro</p>
             </div>
 
-            <div className="flex flex-col">
-                <input name="name" type="name" placeholder="Nome" className="rounded-full bg-transparent ps-3 py-1 border border-white placeholder:text-white focus:outline-none" />
-            </div>
-
-
-            <div className="flex flex-col">
-                <input name="email" type="email" placeholder="Email" className="rounded-full bg-transparent ps-3 py-1 border border-white placeholder:text-white focus:outline-none" />
-            </div>
-
-            <div className="flex flex-col">
-                <input name="password" type="password" placeholder="Senha" className="rounded-full bg-transparent ps-3 py-1 border border-white placeholder:text-white focus:outline-none" />
-            </div>
+            <TransparentInput name="name" placeholder="Nome"/>
+            <TransparentInput name="email" type="email" placeholder="E-mail"/>
+            <TransparentInput name="password" type="password" placeholder="Senha"/>
             
             <div className="w-full flex flex-col items-center">
                 <button className="rounded-full border border-white hover:bg-white py-1 px-14 hover:text-black transition-all ease-in-out bg-transparent text-white">Cadastrar</button>
