@@ -134,9 +134,29 @@ async function main() {
     }
 ];
 
+const usersData = [
+  {
+    name: "Usuário Comum",
+    email: "user@nread.com",
+    password: "password"
+  },
+  {
+    name: "Admin",
+    email: "admin@nread.com",
+    password: "password",
+    isAdmin: true
+  }
+]
+
   for (const book of booksData) {
     await prisma.book.create({
-      data: book,
+      data: book
+    });
+  }
+
+  for (const user of usersData){
+    await prisma.user.create({
+      data: user
     });
   }
 
