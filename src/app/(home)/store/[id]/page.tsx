@@ -1,5 +1,7 @@
 import { getProduct } from "@/backend/product/actions"
+import NotFound from "@/components/public/cards/not_found";
 import ProductPage from "@/components/public/product_page";
+import Link from "next/link";
 
 interface SingleProductProps{
     params: {
@@ -17,7 +19,10 @@ export default async function SingleProduct({params}: SingleProductProps){
         )
     }catch(error){
         return(
-            <h1>Produto não encontrado...</h1>
+            <NotFound>
+                <p>Desculpe, não Encontramos esse livro :(</p>
+                <Link className="underline" href={"/store"}>Clique Aqui para voltar a loja!</Link>
+            </NotFound>
         )
     }
 }
