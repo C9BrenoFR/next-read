@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSwiper } from "swiper/react";
 import TransparentInput from "../../inputs/transparent_input";
+import TransparentButton from "../../custom_buttons/transparent_button";
 
 export default function SingUpCard(){
 
@@ -28,7 +29,7 @@ export default function SingUpCard(){
             <TransparentInput name="password" type="password" placeholder="Senha"/>
             
             <div className="w-full flex flex-col items-center">
-                <button className="rounded-full border border-white hover:bg-white py-1 px-14 hover:text-black transition-all ease-in-out bg-transparent text-white">Cadastrar</button>
+                <TransparentButton>Cadastrar</TransparentButton>
                 <button type="button" onClick={() => swiper.slideNext()} className="text-xs text-black underline pt-1">Ja tem conta?</button>
             </div>
         </form>
