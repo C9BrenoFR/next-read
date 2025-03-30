@@ -1,3 +1,4 @@
+import { verifyCredentials } from "@/backend/auth/action"
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 
@@ -13,15 +14,16 @@ const handler = NextAuth({
           password: { label: "Password", type: "password" }
         },
         async authorize(credentials) {
-            console.log(credentials)
-            if(credentials?.email == "teste@gmail.com" || credentials?.password == "123"){
+            try{
+              const user = await verifyCredentials(credentials);
               return {
-                id: "1",
-                name:"teste",
-                email:"teste@gmail.com"
+                id: user.id.toString(),
+                name: user.name,
+                email: user.email
               }
+            }catch(e){
+              return null
             }
-            return null
         }
       })
     ]
