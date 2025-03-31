@@ -1,4 +1,3 @@
-import { Cinzel } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -22,7 +21,7 @@ const config: Config = {
           variant2 : '#f5f2dc',
         },
         customBlack :{
-          DEFAULT: '#011826',
+          DEFAULT: '#011126',
         },
         customBlue :{
           light: '#4a6f82',
