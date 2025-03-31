@@ -8,7 +8,7 @@ export default function LoginCard(){
             <Link href={"/"} className="w-full flex justify-center mt-9">
                 <Image
                 className="rounded-full mt-[-40px]"
-                src="/img/logoSymbol.png"
+                src="/img/logo.png"
                 alt="logo"
                 width={100}
                 height={100}
