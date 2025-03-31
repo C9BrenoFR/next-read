@@ -1,0 +1,15 @@
+.left-entrance{
+    animation: left-slide 2s ease 0s 1 normal forwards;
+}
+
+@keyframes left-slide {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

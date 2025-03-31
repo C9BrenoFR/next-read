@@ -8,6 +8,7 @@
 @import "link.css";
 @import "book.css";
 @import "glass.css";
+@import "animations.css";
 
 @layer components {
     .neon-effect {
