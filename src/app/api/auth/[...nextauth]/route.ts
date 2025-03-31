@@ -19,7 +19,8 @@ const handler = NextAuth({
               return {
                 id: user.id.toString(),
                 name: user.name,
-                email: user.email
+                email: user.email,
+                is_admin: user.isAdmin
               }
             }catch(e){
               return null
