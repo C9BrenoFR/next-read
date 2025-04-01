@@ -39,3 +39,7 @@
 .fullScreenHeight{
   min-height: calc(100vh - 13.5rem);
 }
+
+.fullScreenHeightAdmin{
+  height: calc(100vh - 3.5rem);
+}
