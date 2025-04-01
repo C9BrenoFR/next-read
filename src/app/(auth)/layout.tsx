@@ -1,4 +1,4 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/backend/auth/options";
 import Header from "@/components/admin/header";
 import { getServerSession } from "next-auth"
 

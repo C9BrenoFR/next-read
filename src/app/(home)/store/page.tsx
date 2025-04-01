@@ -5,17 +5,18 @@ import Pagination from "@/components/pagination";
 import SearchBar from "@/components/public/search_bar";
 
 type StoreProps = {
-    searchParams: {
+    searchParams: Promise<{
         page?: string,
         search?: string,
-    }
+    }>
 }
 
 
 
 export default async function Store({searchParams} : StoreProps){
-    const current_page = Number(searchParams?.page) || 1;
-    const search = searchParams?.search;
+    const params = await searchParams
+    const current_page = Number(params?.page) || 1;
+    const search = params?.search;
     const {products, total_pages} = await getProducts(current_page, search);
     return(
         <section className="w-full h-auto gap-y-24 flex flex-row flex-wrap justify-around bg-[#011126] py-24">

@@ -4,13 +4,14 @@ import ProductPage from "@/components/public/product_page";
 import Link from "next/link";
 
 interface SingleProductProps{
-    params: {
+    params: Promise<{
         id: string
-    }
+    }>
 }
 
 export default async function SingleProduct({params}: SingleProductProps){
-    const id = params.id
+    const param = await params
+    const id = param.id
     try{
         const product = await getProduct(id);
 

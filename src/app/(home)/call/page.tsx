@@ -12,9 +12,7 @@ export default function Call(){
             </article>
             <LineTextArea name="message" placeholder="Digite sua mensagem" className="w-8/12 h-20"/>
             <div className="w-8/12 mt-2 flex justify-end">
-                <TransparentButton>
-                    Enviar
-                </TransparentButton>
+                <TransparentButton type="button">Enviar</TransparentButton>
             </div>
         </section>
     )

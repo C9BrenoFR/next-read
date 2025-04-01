@@ -1,6 +1,15 @@
-import { NextAuthOptions } from "next-auth";
+import { NextAuthOptions, User } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { verifyCredentials } from "@/backend/auth/action";
+
+declare module "next-auth" {
+  interface User {
+    isAdmin: boolean;
+  }
+  interface Session {
+    user: User;
+  }
+}
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -39,7 +48,7 @@ export const authOptions: NextAuthOptions = {
       return token;
     },
     async session({ session, token }) {
-      session.user.isAdmin = token.isAdmin;
+      session.user.isAdmin = token.isAdmin as boolean;
       return session;
     },
   },

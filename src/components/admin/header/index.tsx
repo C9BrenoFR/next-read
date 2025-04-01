@@ -6,6 +6,7 @@ interface HeaderProps{
         name?: string | null
         email?: string | null
         image?: string | null
+        isAdmin: boolean
     }
 }
 
@@ -13,7 +14,7 @@ export default function Header({user}: HeaderProps){
    return(
        <header className="bg-customWhite-variant1 text-customBlack flex justify-between px-3 h-14">
             <UserController name={user?.name}/>
-            <Routes isAdmin={user?.isAdmin} />
+            <Routes isAdmin={user?.isAdmin ?? false} />
             <div></div>
        </header>
    )
