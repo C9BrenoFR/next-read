@@ -1,4 +1,4 @@
-import { Product } from "@/interfaces/product";
+import { Book as Product } from "@prisma/client";
 import Book from "../book";
 import RatingCard from "../cards/rating_card";
 import BuySection from "./buy_section";

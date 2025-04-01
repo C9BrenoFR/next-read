@@ -1,7 +1,7 @@
 import { isEven } from "@/app/js/isEven";
 import Book from "@/components/public/book";
+import { Book as Product } from "@prisma/client";
 import Image from "next/image";
-import { Product } from "@/interfaces/product";
 import Link from "next/link";
 
 interface ProductCardProps {
