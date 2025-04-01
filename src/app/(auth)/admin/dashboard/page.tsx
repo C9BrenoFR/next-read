@@ -1,15 +1,8 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-import LogoutButton from "@/components/admin/buttons/logout";
-import { getServerSession } from "next-auth"
-
 export default async function Page(){
-    const session = await getServerSession(authOptions);
 
     return(
-        <main>
-            Olá, {session?.user?.name}
-            <br/>
-            <LogoutButton/>
+        <main className="h-full w-full bg-[radial-gradient(circle_at_bottom,#5a42c6,#131228)] text-customWhite-variant1">
+            
         </main>
     )
 }
