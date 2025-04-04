@@ -9,13 +9,11 @@ export default async function PageLayout({
   }>) {
     const session = await getServerSession(authOptions);
     return (
-      <html lang="en">
-        <body>
-        <Header user={session?.user} />
+        <>
+          <Header user={session?.user} />
           <main className="fullScreenHeightAdmin">
             {children}
           </main>
-        </body>
-      </html>
+        </>
     );
   }
