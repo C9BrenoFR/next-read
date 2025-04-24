@@ -1,9 +1,9 @@
 'use client';
 
-import { Book } from "@prisma/client";
 import Table from "../table";
 import { useState } from "react";
 import Pagination from "../pagination";
+import { Book } from "@/interfaces/client";
 
 interface BooksPageProps{
     fetch_books: Book[]
