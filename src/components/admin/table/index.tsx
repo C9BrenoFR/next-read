@@ -12,7 +12,7 @@ interface TableProps<T extends base>{
 
 export default function Table<T extends base>({data, keys, columns}: TableProps<T>){
    return(
-       <div className="h-4/5 text-customWhite-variant1">
+       <div className="h-4/5 text-customWhite-variant1 flex flex-col justify-center">
        <table className="w-full overflow-hidden border-spacing-0 border-separate mb-2">
             <thead>
                 <tr>
